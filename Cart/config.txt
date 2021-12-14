@@ -1,0 +1,11 @@
+In AppServiceProvider
+put that line in register function
+
+App::bind('Cart',function() 
+{
+    return new \App\Cart\Cart;
+});
+
+in config/app.php  in aliases put that line
+
+'Cart' => App\Cart\Facades\Cart::class,
